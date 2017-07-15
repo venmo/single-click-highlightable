@@ -1,5 +1,7 @@
 # SingleClickHighlightable
 
+[![Build Status](https://travis-ci.com/venmo/single-click-highlightable.svg?token=URpWhkPxt9ypQvx1UfXz&branch=master)](https://travis-ci.com/venmo/single-click-highlightable)
+
 SingleClickHighlightable is a HOC for [React](https://facebook.github.io/react/) that allows users to highlight text (copy/paste) on elements without triggering the element's onClick handler.
 
 ** **

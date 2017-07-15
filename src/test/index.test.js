@@ -10,18 +10,18 @@ describe('SingleClickHighlightable', () => {
     app = mount(<App onClick={spy} />, { attachTo: document.getElementById('root') });
   });
 
-  it('the app should have text', () => {
+  it('should have text', () => {
     expect(app.text()).toBe(TEXT);
     app.unmount();
   });
 
-  it('should not fire the on click when text is selected/highlight', () => {
+  it('should not fire the onClick when text is selected/highlighted', () => {
     app.simulate('click');
     expect(spy.calledOnce).toBe(false);
     app.unmount();
   });
 
-  it('should fire the on click when text is not selected/highlight', () => {
+  it('should fire the onClick when text is not selected/highlighted', () => {
     window.getSelection = () => { return { toString: () => null } };
     app.simulate('click');
     expect(spy.calledOnce).toBe(true);
