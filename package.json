@@ -19,7 +19,7 @@
     "hoc"
   ],
   "author": "Venmo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/venmo/single-click-highlightable/issues"
   },
